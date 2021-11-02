@@ -26,7 +26,10 @@ export const Pokemons: React.FC = () => {
       <Text style={styles.title}>Pokeapp</Text>
       <FlatList
         data={pokemons}
-        renderItem={({ item }) => <Pokemon data={item} />}
+        // ! Привет костыль, неудобство во внешнем ресурсе
+        renderItem={({ item, index }) => (
+          <Pokemon index={index + 1} data={item} />
+        )}
         style={styles.list}
       />
     </View>
@@ -40,7 +43,7 @@ const styles = StyleSheet.create({
   title: {
     textAlign: "center",
     fontSize: 32,
-    fontWeight: 'bold'
+    fontWeight: "bold",
   },
   list: {
     padding: 16,
