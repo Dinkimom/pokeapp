@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Text, View } from "react-native";
+import { FlatList, Text, View, StyleSheet } from "react-native";
 import { pokeAPI } from "../../services/pokeAPI";
 import { PokemonShortInfo } from "../../types/Pokemon";
 
@@ -21,8 +21,27 @@ export const Pokemons: React.FC = () => {
   }, []);
 
   return (
-    <View>
-      <Text>Here will be a pokemons list</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>Pokeapp</Text>
+      <FlatList
+        data={pokemons}
+        renderItem={({ item }) => <Text>{item.name}</Text>}
+        style={styles.list}
+      />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: 60,
+  },
+  title: {
+    textAlign: "center",
+    fontSize: 32,
+  },
+  list: {
+    padding: 16,
+    marginTop: 16,
+  },
+});
