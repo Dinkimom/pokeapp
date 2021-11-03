@@ -1,5 +1,5 @@
-import axios, { AxiosResponse } from "axios";
-import { GetPokemonsDto, PokemonShortInfo } from "../types/Pokemon";
+import axios from "axios";
+import { PokemonShortInfo } from "../types/Pokemon";
 
 export const pokeAPI = {
   getPokemons: async (): Promise<PokemonShortInfo[]> => {

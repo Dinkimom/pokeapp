@@ -49,12 +49,4 @@ const styles = StyleSheet.create({
     padding: 16,
     marginTop: 16,
   },
-  item: {
-    width: "100%",
-    height: 400,
-    backgroundColor: "red",
-    marginBottom: 16,
-    borderRadius: 8,
-    padding: 16,
-  },
 });
