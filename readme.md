@@ -1,5 +1,6 @@
 # Pokeapp - Справочник покемонов на React native
-![pikachu meme](https://memepedia.ru/wp-content/uploads/2018/10/meme12-5.jpg)
+![pikachu meme](https://www.meme-arsenal.com/memes/0976d1c7fd677e9837bcf68740b0970d.jpg)
+
 Приложение представляет собой клиент, который отображает информацию сервиса https://pokeapi.co
 ## FAQ
 Если у вас возникли сложности, то вам сюда
